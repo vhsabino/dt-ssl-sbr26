@@ -1,0 +1,22 @@
+{
+  "_comment": "Configuracao da metrica SE(2) multi-horizonte.",
+  "horizons": [6, 12, 24, 42, 60, 90],
+  "use_se2": false,
+  "bins": {
+    "trans_max": 0.2,
+    "rot_min": 0.5,
+    "_note": "razao = ativ_rot/(ativ_rot+ativ_trans); trans-dominado < trans_max; rot-dominado > rot_min;"
+  },
+  "verdict": {
+    "h_ref": 24,
+    "n_min_independent": 10,
+    "effect_size_min": 0.2,
+    "alpha": 0.05
+  },
+  "bootstrap": {
+    "n_boot": 2000,
+    "block_samples": 90,
+    "ci": 0.95,
+    "seed": 42
+  }
+}

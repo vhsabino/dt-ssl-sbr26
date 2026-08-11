@@ -1,0 +1,168 @@
+{
+  "_meta": {
+    "gerado_em": "20260807_133917",
+    "script": "scripts/analyze_omega_excitation.py",
+    "n_amostras": 37437,
+    "n_eventos": 46,
+    "labels": [
+      "front_to_back",
+      "side_to_side",
+      "shoot_to_goal",
+      "square"
+    ],
+    "constantes": {
+      "R_contact_m": 0.079601,
+      "wheel_radius_m": 0.029492,
+      "R_over_r_firmware": 2.61,
+      "motor_min_speed_rad_s": 1.567,
+      "deadzone_corpo_rad_s": [
+        0.581,
+        0.6
+      ]
+    },
+    "fonte_constantes": "config/robot_geometry.json",
+    "validacao": "reproduz 94.3% pooled e 77.3% shoot_to_goal de results/identificacao_omega_20260724.md Etapa 4"
+  },
+  "C9_sensibilidade_limiar": [
+    {
+      "limiar_rad_s": 0.5,
+      "frac_abaixo_pooled_pct": 92.46734513983492,
+      "frac_abaixo_shoot_to_goal_pct": 72.81553398058253
+    },
+    {
+      "limiar_rad_s": 0.581,
+      "frac_abaixo_pooled_pct": 94.03264150439405,
+      "frac_abaixo_shoot_to_goal_pct": 76.51283415347785
+    },
+    {
+      "limiar_rad_s": 0.6,
+      "frac_abaixo_pooled_pct": 94.3344819296418,
+      "frac_abaixo_shoot_to_goal_pct": 77.25761404442079
+    },
+    {
+      "limiar_rad_s": 1.0,
+      "frac_abaixo_pooled_pct": 97.56390736437214,
+      "frac_abaixo_shoot_to_goal_pct": 87.93722569490625
+    }
+  ],
+  "B4_zona_morta_vs_translacao": {
+    "n_amostras_sub_limiar": 35203,
+    "frac_sub_limiar_pct": 94.03264150439405,
+    "t_rms_mediana_rad_s": 23.97622342284509,
+    "t_rms_p10_rad_s": 3.5482087188702836,
+    "t_rms_p90_rad_s": 43.071800789860056,
+    "motor_min_speed_rad_s": 1.567,
+    "razao_t_rms_sobre_clamp": 15.30071692587434,
+    "vmag_mediana_m_s": 0.9999999999999999,
+    "snr_yaw_sobre_translacao_mediana": 0.009860630350318898,
+    "snr_yaw_sobre_translacao_p90": 0.05719665702023716
+  },
+  "B4_robustez_angulos": {
+    "nota": "angulos reais nao documentados; conclusao deve ser invariante",
+    "varredura": [
+      {
+        "angulos_deg": [
+          30.0,
+          120.0,
+          -120.0,
+          -30.0
+        ],
+        "frac_rodas_clampadas_pct": 6.549157742237878,
+        "frac_amostras_4_rodas_clampadas_pct": 2.210038917137744,
+        "frac_amostras_alguma_roda_ativa_pct": 97.78996108286225
+      },
+      {
+        "angulos_deg": [
+          30.0,
+          135.0,
+          -135.0,
+          -30.0
+        ],
+        "frac_rodas_clampadas_pct": 6.341789052069426,
+        "frac_amostras_4_rodas_clampadas_pct": 2.210038917137744,
+        "frac_amostras_alguma_roda_ativa_pct": 97.78996108286225
+      },
+      {
+        "angulos_deg": [
+          30.0,
+          150.0,
+          -150.0,
+          -30.0
+        ],
+        "frac_rodas_clampadas_pct": 6.467488566315371,
+        "frac_amostras_4_rodas_clampadas_pct": 2.6844303042354345,
+        "frac_amostras_alguma_roda_ativa_pct": 97.31556969576457
+      },
+      {
+        "angulos_deg": [
+          45.0,
+          120.0,
+          -120.0,
+          -45.0
+        ],
+        "frac_rodas_clampadas_pct": 6.36877538846121,
+        "frac_amostras_4_rodas_clampadas_pct": 2.2270829190693973,
+        "frac_amostras_alguma_roda_ativa_pct": 97.7729170809306
+      },
+      {
+        "angulos_deg": [
+          45.0,
+          135.0,
+          -135.0,
+          -45.0
+        ],
+        "frac_rodas_clampadas_pct": 6.161406698292759,
+        "frac_amostras_4_rodas_clampadas_pct": 2.210038917137744,
+        "frac_amostras_alguma_roda_ativa_pct": 97.78996108286225
+      },
+      {
+        "angulos_deg": [
+          45.0,
+          150.0,
+          -150.0,
+          -45.0
+        ],
+        "frac_rodas_clampadas_pct": 6.287106212538704,
+        "frac_amostras_4_rodas_clampadas_pct": 2.210038917137744,
+        "frac_amostras_alguma_roda_ativa_pct": 97.78996108286225
+      },
+      {
+        "angulos_deg": [
+          60.0,
+          120.0,
+          -120.0,
+          -60.0
+        ],
+        "frac_rodas_clampadas_pct": 6.666335255517995,
+        "frac_amostras_4_rodas_clampadas_pct": 2.394682271397324,
+        "frac_amostras_alguma_roda_ativa_pct": 97.60531772860269
+      },
+      {
+        "angulos_deg": [
+          60.0,
+          135.0,
+          -135.0,
+          -60.0
+        ],
+        "frac_rodas_clampadas_pct": 6.458966565349544,
+        "frac_amostras_4_rodas_clampadas_pct": 2.2270829190693973,
+        "frac_amostras_alguma_roda_ativa_pct": 97.7729170809306
+      },
+      {
+        "angulos_deg": [
+          60.0,
+          150.0,
+          -150.0,
+          -60.0
+        ],
+        "frac_rodas_clampadas_pct": 6.584666079595489,
+        "frac_amostras_4_rodas_clampadas_pct": 2.210038917137744,
+        "frac_amostras_alguma_roda_ativa_pct": 97.78996108286225
+      }
+    ],
+    "alguma_roda_ativa_min_pct": 97.31556969576457,
+    "alguma_roda_ativa_max_pct": 97.78996108286225,
+    "quatro_rodas_clampadas_min_pct": 2.210038917137744,
+    "quatro_rodas_clampadas_max_pct": 2.6844303042354345
+  }
+}

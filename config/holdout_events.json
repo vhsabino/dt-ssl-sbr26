@@ -1,0 +1,17 @@
+{
+  "_comment": "Fonte  do hold-out.",
+  "dataset": "2026-05-18_19-2-15",
+  "team": "allies",
+  "events": [
+    { "label": "front_to_back", "event": "front_to_back_01_01" },
+    { "label": "side_to_side",  "event": "side_to_side_01_05" },
+    { "label": "side_to_side",  "event": "side_to_side_01_06" },
+    { "label": "side_to_side",  "event": "side_to_side_01_07" },
+    { "label": "side_to_side",  "event": "side_to_side_02_03" },
+    { "label": "shoot_to_goal", "event": "shoot_to_goal_05_02" },
+    { "label": "shoot_to_goal", "event": "shoot_to_goal_08_01" },
+    { "label": "shoot_to_goal", "event": "shoot_to_goal_09_01" },
+    { "label": "shoot_to_goal", "event": "shoot_to_goal_12_01" },
+    { "label": "shoot_to_goal", "event": "shoot_to_goal_14_02" }
+  ]
+}

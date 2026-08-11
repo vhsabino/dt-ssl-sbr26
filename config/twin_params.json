@@ -1,0 +1,39 @@
+{
+  "source": "models/sysid_omega_rotate_v1.mat (w) + models/sysid_vxvy_v2.mat (vx/vy)",
+  "note": "fit hold-out>=60% (71.1%), (iii) SE(2) Wilcoxon p<0.05 em todos os horizontes.",
+  "geometry_provenance": "config/robot_geometry.json",
+  "ts": 0.016666666666666666,
+  "robot_radius": 0.079601,
+  "wheel_radius": 0.029492,
+  "dof": {
+    "vx": {
+      "K": 1.1192138689630451,
+      "tau": 0.0717837030217346,
+      "Td": 0.06905,
+      "placeholder": false
+    },
+    "vy": {
+      "K": 1.0524082182376091,
+      "tau": 0.12733127726773819,
+      "Td": 0.056483333333333337,
+      "placeholder": false
+    },
+    "w": {
+      "K": 1.001623094853084,
+      "tau": 0.08276015636818752,
+      "Td": 0.08895,
+      "placeholder": false
+    }
+  },
+  "order": [
+    "K_vx",
+    "tau_vx",
+    "Td_vx",
+    "K_vy",
+    "tau_vy",
+    "Td_vy",
+    "K_w",
+    "tau_w",
+    "Td_w"
+  ]
+}

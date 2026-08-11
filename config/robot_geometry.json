@@ -1,0 +1,62 @@
+{
+  "_comment": "Fonte da geometria do robo (R = raio de contato roda-chao, r = raio da roda).",
+  "physical": {
+    "provenance": "CAD SSL v2025",
+    "date": "2026-07-24",
+    "R_contact_m": 0.079601,
+    "wheel_radius_m": 0.029492,
+    "R_over_r": 2.6991,
+    "note": "verificar se R e ate ponto de contato e r ate superficie do rolete"
+  },
+  "firmware": {
+    "source": "embedded",
+    "R_over_r_implied": 2.61,
+    "R_over_r_implied_note": "inferido empiricamente .",
+    "motor_min_speed_rad_s": 1.567,
+    "motor_min_speed_rad_s_source": "MOTOR_MIN_SPEED_RAD_S;",
+    "omega_cmd_deadzone_rad_s_range": [
+      0.581,
+      0.600
+    ],
+    "omega_cmd_deadzone_rad_s_range_note": "INTERVALO, nunca valor pontual: motor_min_speed_rad_s / R_over_r .",
+    "open_questions": [
+      "Por que o setpoint medido (telemetry.d_speed, pos-deadzone)."
+    ]
+  },
+  "deprecated": {
+    "R_over_r": 3.3208,
+    "R_over_r_source": "identico a kinematics.",
+    "omega_cmd_deadzone_rad_s": 0.472,
+    "reason": "R/r=3.3208 e omega_cmd_deadzone=0.472 sem rastreabilidade documenta.",
+    "omega_body_deadzone_rad_s_0_3_ik": 0.3,
+    "omega_body_deadzone_rad_s_0_3_ik_provenance": "reidentificacao .",
+    "omega_body_deadzone_rad_s_0_3_ik_note": "Distinto da zona morta ELETRICA POR RODA."
+  },
+  "matlab_inverse_kinematics_solver": {
+    "source": "matlab/analytical/inverse_kinematics_solver.m (odometria: rodas medidas -> vx,vy,omega de corpo; pseudo-inversa K_inv 3x4)",
+    "matrix_K_inv": {
+      "row_vx": [
+        -0.008573651497466,
+        -0.007000357133747,
+        0.007000357133747,
+        0.008573651497466
+      ],
+      "row_vy": [
+        0.010251785668734,
+        -0.010251785668734,
+        -0.010251785668734,
+        0.010251785668734
+      ],
+      "row_omega": [
+        0.088100765229306,
+        0.062296648521366,
+        0.062296648521366,
+        0.088100765229306
+      ]
+    },
+    "status_2026-07-24": "OBSOLETO.",
+    "asymmetry": "rodas 1&4 vs 2&3 tem coeficientes DIFERENTES.",
+    "R_efetivo_uniform_excitation": 3.3245,
+    "R_efetivo_note": "R/r implicito de K_inv sob excitacao uniforme."
+  }
+}
