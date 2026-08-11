@@ -1,4 +1,4 @@
-# A Behavioral Model for Digital Twins of Omnidirectional Soccer Robots: Diagnosing Identifiability from Competition Logs
+# A Behavioral Model for Reality-Gap Mitigation in Digital Twins of Omnidirectional Soccer Robots: Diagnosing Identifiability from Competition Logs
 
 Reproduction package. Every number in the paper is produced by the code here
 from the configurations in `config/`, and each claim below names the exact
